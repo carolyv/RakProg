@@ -16,13 +16,13 @@ public class ItemController {
 
     @GetMapping("items")
     public List<Item> getItems() {
+        
         return itemService.getItems();
     }
 
     @PostMapping("items")
-    public String postItem(@RequestBody Item item) {
+    public void postItem(@RequestBody Item item) {
         itemService.saveItem(item);
-        return "Ese edukalt lisatud " + item.getName();
     }
 
     // tehke serverile restart
@@ -32,7 +32,7 @@ public class ItemController {
     // edit päringu
     // view one item päringu
 
-    // andmebaas
+    // andmebaas PostgreSQL - relatsiooniline andmebaas
 
     // kategooria osas
 }

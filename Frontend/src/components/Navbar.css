@@ -15,6 +15,16 @@
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
+#navbar-element {
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: 0.5s;
+}
+#navbar-element:hover {
+  transform: scale(1.2);
+  text-decoration: underline;
+}
 .cart {
   width: 3rem;
+  margin-right: 2em;
 }

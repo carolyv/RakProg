@@ -23,10 +23,10 @@ function Home() {
   return (
     <div>
       <Link to="add-item">
-        <button>Lisa uus ese</button>
+        <button id="button-uni-styling">Lisa uus ese</button>
       </Link>
       <Link to="category-show-list">
-        <button>Vaata kategooriaid</button>
+        <button id="button-uni-styling">Vaata kategooriaid</button>
       </Link>
       <ItemList items={loadedItems} />
     </div>

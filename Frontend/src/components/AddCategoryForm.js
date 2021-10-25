@@ -21,14 +21,14 @@ function AddCategoryForm(props) {
     return (
         <form className="category-form" onSubmit={formSubmitHandler}>
             <label>Kategooria nimi</label><br />
-            <input type="text" placeholder="Kategooria nimi" ref={nameInputRef}/><br />
+            <input id="add-item-form-input" type="text" placeholder="Kategooria nimi" ref={nameInputRef}/><br />
             <label>Kategooria tüüp</label><br />
-            <select type="text" required ref={catTypeInputRef}>
+            <select id="add-item-form-input" type="text" required ref={catTypeInputRef}>
                 <option value="BASIC">BASIC</option>
                 <option value="DELUXE">DELUXE</option>
                 <option value="PREMIUM">PREMIUM</option>
             </select><br />
-            <button>Sisesta kategooria</button>
+            <button id="button-uni-styling">Sisesta kategooria</button>
         </form>
     )
 }

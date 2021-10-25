@@ -23,7 +23,7 @@ function Home() {
   return (
     <div>
       <Link to="add-category">
-        <button>Lisa kategooria</button>
+        <button id="button-uni-styling">Lisa kategooria</button>
     </Link>
       <CategoryList categories={loadedCategories} />
     </div>

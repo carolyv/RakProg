@@ -1,4 +1,44 @@
 /* Peaaegu kõik style-id siin */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap');
+* {
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    background-color: rgb(245, 245, 245);
+}
 .category-form {
     text-align: center;
+}
+#button-uni-styling {
+    padding: 1em;
+    text-transform: uppercase;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(24, 24, 24);
+    margin: 1em;
+    transition: 0.3s;
+    font-weight: 600;
+    background: none;
+}
+#button-uni-styling:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+/* ADD ITEM FORM*/
+#add-item-form-input {
+    padding: 0.5em;
+    margin: 1em;
+    font-size: 1em;
+}
+/* CATEGORY */
+#category-view-styling {
+    border: 1px solid black;
+    display: inline-block;
+    padding: 1em;
+    margin: 1em;
+    text-align: center;
+}
+#cat-name-style {
+    font-weight: 900;
+    font-size: 2em;
 }

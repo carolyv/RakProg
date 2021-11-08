@@ -1,23 +1,36 @@
-import logo from './logo.svg';
+import { useState } from "react"
 import './App.css';
+import Fun from './components/Fun';
+import Greeting from './components/Greeting';
 
 function App() {
+  const [magicNumber, setMagicNumber] = useState(0)
+  const [show, setShow] = useState(true)
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      { show && <h1>{ magicNumber }</h1> }
+      <Fun 
+        magicNumber={magicNumber} 
+        setMagicNumber={setMagicNumber}
+        show={show}
+        setShow={setShow}
+      />
+      <Fun 
+        magicNumber={magicNumber} 
+        setMagicNumber={setMagicNumber} 
+        amount={5}
+        show={show}
+        setShow={setShow}
+      />
+      <Fun 
+        magicNumber={magicNumber} 
+        setMagicNumber={setMagicNumber} 
+        amount={25}
+        show={show}
+        setShow={setShow}
+      />
+      <Greeting name="Caroly" age="20"/>
     </div>
   );
 }
